@@ -5,5 +5,6 @@ export default class App {
 	 */
 	static main() {
 		var app = document.getElementById("app");
+		var stuff = prompt("Hello");
 	}
 }
