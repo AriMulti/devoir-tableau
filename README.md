@@ -7,8 +7,11 @@ On va faire un tableau avec des tableaux.
 ## Préparation en classe
 
 1. Trouver un sujet. _Ex.: Le ski._
+        Undertale goats
 2. Trouver _au moins_ 3 objets ou individus représentant le sujet. _Ex.: Les 5 meilleurs skieurs des derniers jeux olympiques; 4 marques ou models de ski..._
+        Toriel, Asgore, Asriel
 3. Trouver 3 caractéristiques spécifiques aux individus. _Ex.: Nom, prénom, taille..._
+        Prenom(Toriel, Asgore, Asriel), Nom(Dreemur, Dreemur, Dreemur) et Couleurs de leurs vêtements(mauve blanc et bleu, mauve et jaune, jaune et vert)
 
 ## Le HTML brut
 
