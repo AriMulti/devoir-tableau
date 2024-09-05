@@ -23,7 +23,7 @@ export default class App {
 		for(let i = 0; i < 3; i++) {
 			tr = document.createElement("tr");
 			tbody.appendChild("tr");
-
+			alert("");
 			for(let y = 0; y < 3; y++) {
 				td = document.createElement("td");
 				tr.appendChild("td");
