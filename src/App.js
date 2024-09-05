@@ -14,6 +14,19 @@ export default class App {
 		table.appendChild("thead");
 		thead.innerHTML = "Undertale Goats!";
 
+		tbody = document.createElement("tbody");
+		table.appendChild("tbody");
+
+		for(var i = 0; i < 3; i++) {
+			tr = document.createElement("tr");
+			tbody.appendChild("tr");
+
+			for(var y = 0; y < 3; y++) {
+				td = document.createElement("td");
+				tr.appendChild("td");
+			}
+		}
+
 	// <table>
 	// 	<thead>
 	// 		Undertale Goats!
