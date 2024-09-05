@@ -4,6 +4,7 @@ export default class App {
 	 * Méthode principale. Sera appelée après le chargement de la page.
 	 */
 	static main() {
+		var Array = ["Prénoms", "Noms", "Couleurs"];
 		var Prenom = ["Toriel", "Asgore", "Asriel"];
 		var Nom = ["Dreemurr", "Dreemurr", "Dreemurr"]; 
 		var Couleurs = ["Mauve et blanc", "Mauve et jaune", "Jaune et vert"]; 
@@ -23,12 +24,12 @@ export default class App {
 		for(let i = 0; i < 3; i++) {
 			tr = document.createElement("tr");
 			tbody.appendChild(tr);
+			tr.innerHTML = Array[i];
 
-			console.log("First boucle");
 			for(let y = 0; y < 3; y++) {
 				td = document.createElement("td");
 				tr.appendChild(td);
-				console.log("2 boucle");
+
 				if(i === 0) {
 					td.innerHTML = Prenom[y];
 				}
@@ -40,23 +41,6 @@ export default class App {
 				}
 			}
 		}
-
-
-	// 		<tr>
-	// 			<td>Toriel</td>
-	// 			<td>Asgore</td>
-	// 			<td>Asriel</td>
-	// 		</tr>
-	// 		<tr>
-	// 			<td>Dreemurr</td>
-	// 			<td>Dreemurr</td>
-	// 			<td>Dreemurr</td>
-	// 		</tr>
-	// 		<tr>
-	// 			<td>Mauve et blanc</td>
-	// 			<td>Mauve et jaune</td>
-	// 			<td>Jaune et vert</td>
-	// 		</tr>
 
 	}
 }
