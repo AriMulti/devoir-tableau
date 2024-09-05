@@ -4,6 +4,9 @@ export default class App {
 	 * Méthode principale. Sera appelée après le chargement de la page.
 	 */
 	static main() {
+		var Prenom = ["Toriel", "Asgore", "Asriel"];
+		var Nom = ["Dreemurr", "Dreemurr", "Dreemurr"]; 
+		var Couleurs = ["Mauve et blanc", "Mauve et jaune", "Jaune et vert"]; 
 		var table, thead, tbody, tr, td;
 		var app = document.getElementById("app");
 		
@@ -17,21 +20,26 @@ export default class App {
 		tbody = document.createElement("tbody");
 		table.appendChild("tbody");
 
-		for(var i = 0; i < 3; i++) {
+		for(let i = 0; i < 3; i++) {
 			tr = document.createElement("tr");
 			tbody.appendChild("tr");
 
-			for(var y = 0; y < 3; y++) {
+			for(let y = 0; y < 3; y++) {
 				td = document.createElement("td");
 				tr.appendChild("td");
+				if(i === 0) {
+					td.innerHTML = Prenom[y];
+				}
+				if(i === 1) {
+					td.innerHTML = Nom[y];
+				}
+				if(i === 2) {
+					td.innerHTML = Couleurs[y];
+				}
 			}
 		}
 
-	// <table>
-	// 	<thead>
-	// 		Undertale Goats!
-	// 	</thead>
-	// 	<tbody>
+
 	// 		<tr>
 	// 			<td>Toriel</td>
 	// 			<td>Asgore</td>
@@ -47,8 +55,6 @@ export default class App {
 	// 			<td>Mauve et jaune</td>
 	// 			<td>Jaune et vert</td>
 	// 		</tr>
-	// 	</tbody>
-	// </table>
 
 	}
 }
