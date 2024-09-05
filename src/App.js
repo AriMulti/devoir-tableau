@@ -9,24 +9,26 @@ export default class App {
 		var Couleurs = ["Mauve et blanc", "Mauve et jaune", "Jaune et vert"]; 
 		var table, thead, tbody, tr, td;
 		var app = document.getElementById("app");
-		
+
 		table = document.createElement("table");
-		app.appendChild("table");
+		app.appendChild(table);
+
 
 		thead = document.createElement("thead");
-		table.appendChild("thead");
+		table.appendChild(thead);
 		thead.innerHTML = "Undertale Goats!";
-
 		tbody = document.createElement("tbody");
-		table.appendChild("tbody");
+		table.appendChild(tbody);
 
 		for(let i = 0; i < 3; i++) {
 			tr = document.createElement("tr");
-			tbody.appendChild("tr");
-			alert("");
+			tbody.appendChild(tr);
+
+			console.log("First boucle");
 			for(let y = 0; y < 3; y++) {
 				td = document.createElement("td");
-				tr.appendChild("td");
+				tr.appendChild(td);
+				console.log("2 boucle");
 				if(i === 0) {
 					td.innerHTML = Prenom[y];
 				}
